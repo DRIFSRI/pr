@@ -1,5 +1,6 @@
-package com.devcolibri.databaseexam;
+package fullStack.WinCalc.View.example;
 
+/*
 import java.awt.*;
 
 import java.awt.event.*;
@@ -56,7 +57,7 @@ class ButtonBelowTable extends JFrame
 
                         {"c","8","9"}
 
-                };*/
+                };*
         dataValues = new String[val.size()][5];
         for (int i=0;i!=val.size();i++
              ) {
@@ -123,4 +124,4 @@ class ButtonBelowTable extends JFrame
 
     }
 
-}
+}//*/

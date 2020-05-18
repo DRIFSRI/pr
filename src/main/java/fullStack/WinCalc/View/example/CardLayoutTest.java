@@ -1,4 +1,4 @@
-package com.devcolibri.databaseexam;
+package fullStack.WinCalc.View.example;
 
 import java.awt.*;
 import java.awt.event.*;

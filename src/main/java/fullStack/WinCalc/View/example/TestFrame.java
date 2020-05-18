@@ -1,4 +1,5 @@
-package com.devcolibri.databaseexam;
+package fullStack.WinCalc.View.example;
+
 
 import java.awt.Container;
 import java.awt.Dimension;
@@ -10,7 +11,6 @@ import javax.swing.BoxLayout;
 import javax.swing.JComboBox;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
-import javax.swing.JOptionPane;
 
 public class TestFrame extends JFrame {
 

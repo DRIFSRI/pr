@@ -1,4 +1,4 @@
-package com.devcolibri.databaseexam;
+package fullStack.WinCalc.View.example;
 
 
 import javax.swing.*;

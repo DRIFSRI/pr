@@ -1,4 +1,5 @@
-package com.devcolibri.databaseexam;
+package fullStack.WinCalc.database.JBDCComponent;
+
 
 
 import java.sql.Connection;
@@ -15,7 +16,8 @@ public class NamedParamStatement {
 
     public  NamedParamStatement(Connection conn, String sql) throws SQLException {
         int pos;
-        while((pos = sql.indexOf(":")) != -1) {
+        
+         while((pos = sql.indexOf(":")) != -1) {
             int end = sql.substring(pos).indexOf(" ");
             if (end == -1)
                 end = sql.length();

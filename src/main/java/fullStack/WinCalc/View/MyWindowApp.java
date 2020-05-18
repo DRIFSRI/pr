@@ -1,4 +1,4 @@
-package com.devcolibri.databaseexam;
+package fullStack.WinCalc.View;
 //import com.sun.tools.javac.comp.Flow;
 
 import javax.swing.*;
@@ -19,6 +19,9 @@ public class MyWindowApp extends JFrame { //Наследуя от JFrame мы п
         //закрытии окна закрывалась и программа,
         //иначе она останется висеть в процессах
     }
+
+
+
 
     public static void main(String[] args) { //эта функция может быть и в другом классе
         MyWindowApp app = new MyWindowApp(); //Создаем экземпляр нашего приложения
@@ -47,7 +50,6 @@ public class MyWindowApp extends JFrame { //Наследуя от JFrame мы п
 
         //Event event = new Event(){return 0;};
         //but.mouseEnter();
-
 
         //app.add(new JLabel(args ));
         app.getContentPane().add(jp1,BorderLayout.PAGE_START);

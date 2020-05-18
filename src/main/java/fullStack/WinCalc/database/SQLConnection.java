@@ -1,4 +1,5 @@
-package com.devcolibri.databaseexam;
+package fullStack.WinCalc.database;
+
 
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -18,6 +19,8 @@ import com.mysql.cj.jdbc.*;
 
 
 //import org.springframework.jbdc
+import fullStack.WinCalc.database.cValute
+        ;
 import org.springframework.jdbc.core.namedparam.NamedParameterJdbcTemplate;
 import org.springframework.jdbc.core.namedparam.NamedParameterJdbcTemplate.*;
 import org.springframework.jdbc.core.support.JdbcDaoSupport;
@@ -26,11 +29,6 @@ import javax.sql.DataSource;
 import javax.xml.crypto.Data;
 
 public class SQLConnection {
-    void s()
-    {
-
-    }
-
     // JDBC URL, username and password of MySQL server
     private static final String url = "jdbc:mysql://localhost:3306/mydb";
     private static final String user = "root";
@@ -63,8 +61,7 @@ public class SQLConnection {
         //DataSource l = new DataSource
     }
 
-
-    public static ArrayList<Valute> Con(ArrayList<Valute> v, Date mDate)
+    public static ArrayList<cValute> Con(ArrayList<cValute> v, Date mDate)
     {
 
         try
@@ -88,7 +85,7 @@ public class SQLConnection {
                 sql = "insert into table_4 values (?, ?, ?,?,?,? )";
                 pr = con.prepareStatement(sql);
                 // todo блабла шоу
-                for (Valute val : v) {
+                for (cValute val : v) {
                     pr.setInt(1, val.NumCode);
                     pr.setString(2, val.CharCode);
                     pr.setInt(3, val.Nominal);
@@ -109,7 +106,7 @@ public class SQLConnection {
             {
 
                 v.add
-                        (new Valute(a.getInt("NumCode"),
+                        (new cValute(a.getInt("NumCode"),
                                 a.getString("CharCode"),
                                 a.getInt("Nominal"),
                                 a.getString("Name"),
@@ -198,7 +195,5 @@ public class SQLConnection {
         }
         return null;
     }
-
-
 }
 

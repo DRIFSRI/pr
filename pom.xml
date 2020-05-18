@@ -4,25 +4,42 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.devcolibri</groupId>
-    <artifactId>com.devcolibri.databaseexam</artifactId>
+    <groupId>fullStack.WinCalc</groupId>
+    <artifactId>fullStack.WinCalc.database</artifactId>
+    <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
-
-    <dependencies>
+        <dependencies>
         <dependency>
             <groupId>mysql</groupId>
             <artifactId>mysql-connector-java</artifactId>
             <version>8.0.14</version>
         </dependency>
 
-
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-jdbc</artifactId>
-
             <version>5.2.3.RELEASE</version>
-
         </dependency>
+
+            <dependency>
+                <groupId>org.springframework</groupId>
+                <artifactId>spring-core</artifactId>
+                <version>5.1.14.RELEASE</version>
+            </dependency>
+
+
+            <dependency>
+                <groupId>springframework</groupId>
+                <artifactId>spring-context</artifactId>
+                <version>1.2.6</version>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework</groupId>
+                <artifactId>spring-beans</artifactId>
+                <version>5.2.6.RELEASE</version>
+            </dependency>
+
+
 
 
 
@@ -31,6 +48,4 @@
         <maven.compiler.source>1.6</maven.compiler.source>
         <maven.compiler.target>1.6</maven.compiler.target>
     </properties>
-
-
 </project>
