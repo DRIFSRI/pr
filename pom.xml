@@ -39,10 +39,6 @@
                 <version>5.2.6.RELEASE</version>
             </dependency>
 
-
-
-
-
     </dependencies>
     <properties>
         <maven.compiler.source>1.6</maven.compiler.source>
