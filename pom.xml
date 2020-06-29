@@ -9,17 +9,29 @@
     <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
         <dependencies>
-        <dependency>
-            <groupId>mysql</groupId>
-            <artifactId>mysql-connector-java</artifactId>
-            <version>8.0.14</version>
-        </dependency>
+            <dependency>
+                <groupId>mysql</groupId>
+                <artifactId>mysql-connector-java</artifactId>
+                <version>8.0.14</version>
+            </dependency>
 
-        <dependency>
+            <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-jdbc</artifactId>
             <version>5.2.3.RELEASE</version>
-        </dependency>
+            </dependency>
+
+            <dependency>
+                <groupId>org.jsoup</groupId>
+                <artifactId>jsoup</artifactId>
+                <version>1.13.1</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.springframework</groupId>
+                <artifactId>spring-context-support</artifactId>
+                <version>5.2.7.RELEASE</version>
+            </dependency>
 
             <dependency>
                 <groupId>org.springframework</groupId>
@@ -27,19 +39,19 @@
                 <version>5.1.14.RELEASE</version>
             </dependency>
 
-
             <dependency>
                 <groupId>springframework</groupId>
                 <artifactId>spring-context</artifactId>
                 <version>1.2.6</version>
             </dependency>
+
             <dependency>
                 <groupId>org.springframework</groupId>
                 <artifactId>spring-beans</artifactId>
                 <version>5.2.6.RELEASE</version>
             </dependency>
-
     </dependencies>
+    asd asd asd asd asd asd asd asd asd asd asd asd 
     <properties>
         <maven.compiler.source>1.6</maven.compiler.source>
         <maven.compiler.target>1.6</maven.compiler.target>
