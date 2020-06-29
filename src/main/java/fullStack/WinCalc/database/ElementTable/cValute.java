@@ -1,4 +1,4 @@
-package fullStack.WinCalc.database;
+package fullStack.WinCalc.database.ElementTable;
 
 public class cValute
 {
@@ -7,6 +7,8 @@ public class cValute
     Integer Nominal;
     String Name;
     Double Value;
+
+    //
     cValute(Integer NumCode,
            String CharCode,
            Integer  Nominal,

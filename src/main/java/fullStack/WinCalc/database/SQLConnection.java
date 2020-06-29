@@ -9,24 +9,15 @@ import java.sql.Statement;
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.List;
 import java.util.Map;
 
 
-
-import com.mysql.cj.jdbc.*;
 //import org.springframework.boot.autoconfigure.jdbc.JdbcProperties;
 
 
 //import org.springframework.jbdc
-import fullStack.WinCalc.database.cValute
+import fullStack.WinCalc.database.ElementTable.cValute
         ;
-import org.springframework.jdbc.core.namedparam.NamedParameterJdbcTemplate;
-import org.springframework.jdbc.core.namedparam.NamedParameterJdbcTemplate.*;
-import org.springframework.jdbc.core.support.JdbcDaoSupport;
-
-import javax.sql.DataSource;
-import javax.xml.crypto.Data;
 
 public class SQLConnection {
     // JDBC URL, username and password of MySQL server

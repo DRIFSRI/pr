@@ -1,22 +1,21 @@
 package fullStack.WinCalc.database;
 
-import org.jsoup.Jsoup;
-import org.jsoup.nodes.Document;
-import org.jsoup.nodes.Element;
-
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
+import java.net.URL;
+import java.net.URLConnection;
 import java.sql.Date;
 import java.util.ArrayList;
 //
-import java.util.*;
 
-import fullStack.WinCalc.database.cValute;
+import fullStack.WinCalc.database.ElementTable.cValute;
+
 import org.jsoup.*;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
 
-import java.io.*;
+//import javax.swing.text.Document;
+
 //
 public class ExchangeRates
 {
@@ -70,7 +69,7 @@ public class ExchangeRates
         ArrayList<cValute> lValute = new ArrayList<cValute>();
         Document dc = Jsoup.connect("http://www.cbr.ru/scripts/XML_daily.asp").get();
 
-        for (Element e:dc.select("Valute"))
+        for (Element e:dc.  select("Valute"))
         {
             lValute.add(new cValute(
                     Integer.parseInt(e.select("NumCode").text())
@@ -92,5 +91,36 @@ public class ExchangeRates
     public String[] a()
     {
         return null;
+    }
+
+    public String getURLContent(String p_sURL)
+    {
+        URL oURL;
+        URLConnection oConnection;
+        BufferedReader oReader;
+        String sLine;
+        StringBuilder sbResponse;
+        String sResponse = null;
+
+        try
+        {
+            oURL = new URL(p_sURL);
+            oConnection = oURL.openConnection();
+            oReader = new BufferedReader(new InputStreamReader(oConnection.getInputStream()));
+            sbResponse = new StringBuilder();
+
+            while((sLine = oReader.readLine()) != null)
+            {
+                sbResponse.append(sLine);
+            }
+
+            sResponse = sbResponse.toString();
+        }
+        catch(Exception e)
+        {
+            e.printStackTrace();
+        }
+
+        return sResponse;
     }
 }

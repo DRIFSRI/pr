@@ -52,5 +52,4 @@ public class NamedParamStatement {
     private int getIndex(String name) {
         return fields.indexOf(name)+1;
     }
-
 }
